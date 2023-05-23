@@ -1,0 +1,116 @@
+.main{
+    width: 100%;
+    height: 90vh;
+    background-color: blue;
+    margin-top: 20px;
+}
+.welcomdiv{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gray;
+    width: 100%;
+    height: 100px;
+}
+.welcomdiv h1 {
+    padding: 25px;
+    font-size: 80px;
+}
+.div1 ,.div2,.div3{
+    background-color: black;
+    width: 100%;
+    height: 30vh;
+}
+.div2{
+    border-top: 10px dashed white;
+    border-bottom: 10px dashed white;
+
+}
+.div1{ position: relative;                                           }
+.div2{ position: relative;                                           }
+.div3{ position: relative;                                           }
+.div1 img {
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    bottom: 3%;
+    left: 3%;
+
+    animation-name:  leftToRight  ;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+.div2 img {
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+    transform: rotatey(180deg);
+
+
+    animation-name:  rightToLeft  ;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+
+}
+.div3 img {
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    bottom: 3%;
+    left: 3%;
+
+    animation-name:  leftToRight  ;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+}
+
+
+/* ---------------------- anumation -----------------------*/
+@keyframes leftToRight {
+    
+    25%{
+        left: 120%;
+
+    }
+    50%{
+        transform: rotateY(180deg);
+    }
+    75%{
+        left: -20%;
+
+    }
+    100%{
+
+    }}
+
+@keyframes rightToLeft {
+    
+    25%{
+        right: 120%;
+    }
+    65%{
+        transform: rotatey(360deg);
+        
+    }
+    75%{
+        right: -20% ;
+        
+    }
+}
+.main.div1.button1
+{
+    transition-duration: 2s ;
+}
+
+
+
+
+
+
+
+
+
